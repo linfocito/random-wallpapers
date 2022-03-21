@@ -1,4 +1,4 @@
-# random-walppapers
+# random-wallpapers
 
 ## Introduction:
 `random-walppapers` is a shell script to set a random X wallpaper and change it randomly after a given interval. The script uses [feh](https://feh.finalrewind.org/) to display the images and will always zoom it to cover the entire screen, preserving aspect ratio.
