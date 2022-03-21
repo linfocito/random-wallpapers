@@ -1,0 +1,11 @@
+#!/bin/sh
+
+wp_dir=~/.local/share/wallpapers
+wp_time=900 # time in seconds between wallpaper changes
+
+if [ "$(/bin/ls -A ${wp_dir} 2> /dev/null)" ]; then
+    while [ -x "$(which feh)" ]; do
+        feh --bg-fill -z --no-fehbg ${wp_dir}
+        sleep ${wp_time}
+    done
+fi
